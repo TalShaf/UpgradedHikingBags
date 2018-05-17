@@ -1,0 +1,16 @@
+version=1
+id=679535304
+title=Upgraded Hiking Bags
+description=** NEW: Bags can be crafted without the bag becoming unequipped and losing the ability too equip other bags. No more lost items: full bags are emptied during the crafting process **
+description=
+description=Craft 3 different sized Hiking Bags, using exisiting bags, needle, thread, and either scissors or a knife. The Large Upgraded Hiking Bag requires reading a Sewing Magazine to learn the recipe. The Magazine should spawn in logical places.
+description=
+description=Small Upgraded Hiking bag has a carrying capacity of 27 and weight reduction of 85.
+description=
+description=Medium Upgraded Hiking bag has a carrying capacity of 32 and weight reduction of 90.
+description=
+description=Large Upgraded Hiking bag has a carrying capacity of 37 and weight reduction of 95.
+description=
+description=This is my first mod, and was created mainly for myself, as most other bag mods are either overpowered or part of a larger mod. Any input or advice is appreciated. The bag textures were also done by me based on the in game textures. I wanted a more dirty, kitbag look. Inspired by DarkJarris's Hiking Bag Deluxe mod. Coding help courtesy of tommysticks and nolanri
+tags=
+visibility=public

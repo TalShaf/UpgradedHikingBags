@@ -1,0 +1,127 @@
+/** Upgraded Hiking Bags **/
+/** by TalSh **/
+
+
+
+module UpgradedHikingBags
+	
+	{	
+
+		imports	
+		{
+			Base
+		}
+		
+		item SewingMag
+		{
+			Weight	=	0.1,
+			Type	=	Literature,
+			DisplayName	=	The Sewing Magazine,
+			Icon	=	MagazineSew,
+			TeachedRecipes  =   Make Large Upgraded Hiking Bag,
+			ReplaceOnUse    =   SewingMag,
+		}
+
+		item SmallUpgradedHikingBag
+		{
+			WeightReduction	=	85,
+			Weight	=	0.6,
+			Type	=	Container,
+			Capacity	=	27,
+			DisplayName	=	Small Upgraded Hiking Bag,
+			Icon	=	SmallUpgradedHikingBag,
+			CanBeEquipped = Back,
+			OpenSound   =   PZ_OpenBag,
+			CloseSound   =   PZ_CloseBag,
+			PutInSound   =   PZ_PutInBag,
+		}
+		
+		item MediumUpgradedHikingBag
+		{
+			WeightReduction	=	90,
+			Weight	=	0.7,
+			Type	=	Container,
+			Capacity	=	32,
+			DisplayName	=	Medium Upgraded Hiking Bag,
+			Icon	=	MediumUpgradedHikingBag,
+			CanBeEquipped = Back,
+			OpenSound   =   PZ_OpenBag,
+			CloseSound   =   PZ_CloseBag,
+			PutInSound   =   PZ_PutInBag,
+		}
+		
+		item LargeUpgradedHikingBag
+		{
+			WeightReduction	=	95,
+			Weight	=	0.8,
+			Type	=	Container,
+			Capacity	=	37,
+			DisplayName	=	Large Upgraded Hiking Bag,
+			Icon	=	LargeUpgradedHikingBag,
+			CanBeEquipped = Back,
+			OpenSound   =   PZ_OpenBag,
+			CloseSound   =   PZ_CloseBag,
+			PutInSound   =   PZ_PutInBag,
+		}
+		
+		recipe Make Small Upgraded Hiking Bag
+		{
+			keep Needle,
+			keep Scissors,
+			Thread=2,
+			OnCreate:RemoveBackPack,
+			NormalHikingBag=2,
+			Result:SmallUpgradedHikingBag,
+			Time:250.0,
+		}
+
+		recipe Make Small Upgraded Hiking Bag
+		{
+			keep Needle,
+			keep Scissors,
+			Thread=1,
+			OnCreate:RemoveBackPack,
+			BigHikingBag,
+			Duffelbag/NormalHikingBag,
+			Result:SmallUpgradedHikingBag,
+			Time:250.0,
+		}
+		
+		
+		recipe Make Medium Upgraded Hiking Bag
+		{
+			keep Needle,
+			keep Scissors,
+			Thread=2,
+			OnCreate:RemoveBackPack,
+			BigHikingBag,
+			BigHikingBag/NormalHikingBag,
+			Result:MediumUpgradedHikingBag,
+			Time:300.0,
+		}
+		
+		recipe Make Medium Upgraded Hiking Bag
+		{
+			keep Needle,
+			keep Scissors,
+			Thread=2,
+			OnCreate:RemoveBackPack,
+			NormalHikingBag=3,
+			Result:MediumUpgradedHikingBag,
+			Time:300.0,
+		}
+		
+		recipe Make Large Upgraded Hiking Bag
+		{
+			keep Needle,
+			keep Scissors,
+			Thread=3,
+			OnCreate:RemoveBackPack,
+			MediumUpgradedHikingBag,
+			BigHikingBag/NormalHikingBag,
+			Result:LargeUpgradedHikingBag,
+			NeedToBeLearn:true,
+			Time:350.0,
+		}
+
+	}
